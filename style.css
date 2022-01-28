@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-width: 700px;
+}
+
+main {
+    margin: 0 auto;
+}
+
+.title {
+    margin-top: 28vh;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    margin: 0 auto;
+    width: 575px;
+}
+
+.bar {
+    margin: 10px auto;
+    border-radius: 30px;
+    border:1px solid #dcdcdc;
+}
+  
+.bar:hover {
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
+  
+.bar:focus-within {
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+    outline: none;
+}
+
+#input-text {
+    margin: auto 25px;
+    height: 43px;
+    width: 520px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+}
+  
+.input-options {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+button {
+    background-color: #f5f5f5;
+    border: none;
+    color: #707070;
+    font-size: 15px;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover{
+    border: 1px solid #00628f;
+    padding: 9px 19px;
+    color: #00628f;
+}
+  
+button:focus{
+    border: 1px solid #00628f;
+    padding: 9px 19px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #00628f;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 55%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #00628f transparent transparent transparent;
+}
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+footer {
+    margin-top: 44vh;
+    padding: 3px;
+    font-size: 15px;
+    clear: both;
+    text-align: center;
+    color: #666;
+}
+
+footer a {
+    font: Verdana, Arial, Helvetica, sans-serif;
+    color: #707070;
+    letter-spacing: -1px;
+    text-decoration: none;
+    background-color: inherit;
+}
+
+footer a:hover, footer a:active {text-decoration: underline; color: #00628f; background-color: inherit;}
