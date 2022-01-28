@@ -8,8 +8,8 @@ body {
     margin: 0;
     background-color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    min-width: 100vw;
-    min-height: 100vh;
+    min-width: 590px;
+    min-height: 100%;
 }
 
 main {
@@ -139,3 +139,9 @@ footer a {
 }
 
 footer a:hover, footer a:active {text-decoration: underline; color: #00628f; background-color: inherit;}
+
+@media (max-width: 590px) {
+    footer {
+        width: 590px;
+    }
+}
