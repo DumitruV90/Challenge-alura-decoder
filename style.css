@@ -8,12 +8,11 @@ body {
     margin: 0 auto;
     background-color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    min-height: 100vh;
     
 }
 
 main {
-    height: 90vh;
+    height: 93vh;
     display: flex;
     align-items: center;
     border: 1px solid black;
@@ -120,7 +119,7 @@ button:focus {
 
 footer {
     position: absolute;
-    margin: 10px auto;
+    margin-bottom: 10px;
     bottom: 0;
     width: 100%;
     font-size: 15px;
