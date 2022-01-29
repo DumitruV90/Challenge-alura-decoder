@@ -55,8 +55,8 @@ main {
   
 .input-options {
     margin-top: 20px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    
   }
   
 button {
@@ -150,6 +150,10 @@ footer a:hover, footer a:active {text-decoration: underline; color: #00628f; bac
     #input-text {
         height: 50px;
         width: 85%;
+    }
+
+    button {
+        padding: 10px 10px;
     }
 
 }
