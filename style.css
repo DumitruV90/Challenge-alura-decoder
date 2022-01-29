@@ -12,9 +12,10 @@ body {
 }
 
 main {
-    height: 100vh;
+    height: 95vh;
     display: flex;
     align-items: center;
+    border: 1px solid black;
 }
 
 .title {
