@@ -8,6 +8,7 @@ body {
     margin: 0 auto;
     background-color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
     
 }
 
