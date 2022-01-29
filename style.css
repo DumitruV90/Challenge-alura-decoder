@@ -30,6 +30,7 @@ main {
 .bar {
     margin: 20px auto;
     border-radius: 30px;
+    border:1px solid #dcdcdc;
 }
   
 .bar:hover {
