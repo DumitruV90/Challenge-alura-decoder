@@ -94,7 +94,7 @@ copiarBtn.addEventListener("click", function() {
 });
 
 copiarBtn.addEventListener("mouseout", function() {
-    toolTip.innerHTML = "Copiar al portapapeles";
+    toolTip.innerHTML = "Copiar texto al portapapeles";
 });
 
 limpiarBtn.addEventListener("click", function() {

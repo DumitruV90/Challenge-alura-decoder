@@ -5,21 +5,23 @@
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     background-color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    min-width: 590px;
-    min-height: 100%;
+    min-height: 100vh;
+    
 }
 
 main {
-    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .title {
-    margin-top: 28vh;
-    display: flex;
-    justify-content: center;
+    margin: 10px auto;
+    text-align: center;
+    
 }
 
 .box {
@@ -28,9 +30,9 @@ main {
 }
 
 .bar {
-    margin: 10px auto;
+    margin: 0 auto;
     border-radius: 30px;
-    border:1px solid #dcdcdc;
+    border: 1px solid #dcdcdc;
 }
   
 .bar:hover {
@@ -120,14 +122,14 @@ button:focus{
 
 footer {
     position: absolute;
+    margin: 10px auto;
     bottom: 0;
-    padding: 3px;
-    width: 100vw;
-    height: 2.5rem;
+    width: 100%;
     font-size: 15px;
     clear: both;
     text-align: center;
     color: #666;
+
 }
 
 footer a {
@@ -140,14 +142,14 @@ footer a {
 
 footer a:hover, footer a:active {text-decoration: underline; color: #00628f; background-color: inherit;}
 
-@media (max-width: 800px) {
-    body {
-        display: block;
+@media (max-width: 575px) {
+    .box {
+        width: 100%;
     }
-}
 
-@media (max-width: 590px) {
-    footer {
-        width: 590px;
+    #input-text {
+        height: 50px;
+        width: 90%;
     }
+
 }
