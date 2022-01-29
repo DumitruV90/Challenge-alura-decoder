@@ -144,12 +144,12 @@ footer a:hover, footer a:active {text-decoration: underline; color: #00628f; bac
 
 @media (max-width: 575px) {
     .box {
-        width: 100%;
+        width: 95%;
     }
 
     #input-text {
         height: 50px;
-        width: 90%;
+        width: 85%;
     }
 
 }
