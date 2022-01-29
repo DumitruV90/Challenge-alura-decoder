@@ -19,9 +19,7 @@ main {
 }
 
 .title {
-    margin: 10px auto;
     text-align: center;
-    
 }
 
 .box {
@@ -30,9 +28,8 @@ main {
 }
 
 .bar {
-    margin: 0 auto;
+    margin: 20px auto;
     border-radius: 30px;
-    border: 1px solid #dcdcdc;
 }
   
 .bar:hover {
@@ -54,32 +51,31 @@ main {
 }
   
 .input-options {
-    margin-top: 20px;
     text-align: center;
-    
   }
   
 button {
     background-color: #f5f5f5;
+    padding: 10px 20px;
+    margin: 5px;
     border: none;
     color: #707070;
     font-size: 15px;
-    padding: 10px 20px;
-    margin: 5px;
     border-radius: 4px;
     outline: none;
     cursor: pointer;
 }
 
-button:hover{
-    border: 1px solid #00628f;
-    padding: 9px 19px;
+button:hover {
+    padding: 8px 18px;
     color: #00628f;
+    border: 2px solid #00628f;
 }
   
-button:focus{
-    border: 1px solid #00628f;
-    padding: 9px 19px;
+button:focus {
+    padding: 8px 18px;
+    color: #00628f;
+    border: 2px solid #00628f;
 }
 
 .tooltip {
@@ -152,8 +148,9 @@ footer a:hover, footer a:active {text-decoration: underline; color: #00628f; bac
         width: 85%;
     }
 
-    button {
+    button, button:hover, button:focus {
         padding: 10px 10px;
+        border: none;
     }
 
 }
