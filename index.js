@@ -60,6 +60,13 @@ encriptarBtn.addEventListener("click", function() {
     
 });
 
+inputText.addEventListener("keypress", function(event) {
+    if (event.key === "enter") {
+        event.preventDefault();
+        encriptarBtn.click();
+    }
+});
+
 desencriptarBtn.addEventListener("click", function() {
 
     // Creación del objeto que almacena los nuevos valores
