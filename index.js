@@ -60,8 +60,12 @@ encriptarBtn.addEventListener("click", function() {
 });
 
 inputText.addEventListener("keypress", function(event) {
+
+    // Ejecución de la función cuando el usuario presione la tecla enter después de ingresar el texto
     if (event.key === "enter") {
+        // Cancelación de la acción por defecto, si es necesario
         event.preventDefault();
+        // Enlace con la función asociada al botón de encriptar
         encriptarBtn.click();
     }
 });
