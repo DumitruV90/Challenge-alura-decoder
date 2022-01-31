@@ -27,7 +27,6 @@ const limpiarBtn = document.getElementById("btn-limpiar");
 const toolTip = document.getElementById("myTooltip");
 
 
-
 encriptarBtn.addEventListener("click", function() {
 
     //Retiro de acentos o caracteres especiales de la cadena de texto y conversión a minúsculas
