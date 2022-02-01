@@ -16,7 +16,7 @@ encriptarBtn.addEventListener("click", function() {
     let regEx = /^[a-z][a-z\s]*$/;
 
     if (!entradaTexto.match(regEx)) {
-        swal("Oops!", "Recuerda escribir úincamente letras del alfabeto", "error");
+        swal("Oops!", "Recuerda escribir únicamente letras del alfabeto", "error");
     }
     
     //Encriptación de la cadena de texto
