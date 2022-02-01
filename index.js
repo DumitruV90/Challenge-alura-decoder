@@ -1,24 +1,4 @@
 
-/* Reglas de encriptación: 
-"e" es convertido para "enter" 
-"i" es convertido para "imes"
-"a" es convertido para "ai"
-"o" es convertido para "ober"
-"u" es convertido para "ufat"
-Solo letras minusculas
-No se permite acentuación de palabras 
-*/
-
-/* Reglas de desencriptación: 
-"enter" es convertido para "e" 
-"imes" es convertido para "i"
-"ai" es convertido para "a"
-"ober" es convertido para "o"
-"ufat" es convertido para "u"
-Solo letras minusculas
-No se permite acentuación de palabras   
-*/
-
 const inputText = document.getElementById("input-text");
 const encriptarBtn = document.getElementById("btn-encriptar");
 const desencriptarBtn = document.getElementById("btn-desencriptar");
@@ -32,6 +12,13 @@ encriptarBtn.addEventListener("click", function() {
     //Retiro de acentos o caracteres especiales de la cadena de texto y conversión a minúsculas
     let entradaTexto = inputText.value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); 
 
+    // Validación de entrada únicamente para letras del alfabeto
+    let regEx = /^[a-z][a-z\s]*$/;
+
+    if (!entradaTexto.match(regEx)) {
+        swal("Oops!", "Recuerda escribir úincamente letras del alfabeto", "error");
+    }
+    
     //Encriptación de la cadena de texto
     let textoFinal = "";
     for (let vocal of entradaTexto) {
