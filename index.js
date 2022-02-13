@@ -9,17 +9,17 @@ const toolTip = document.getElementById("myTooltip");
 
 encriptarBtn.addEventListener("click", function() {
 
-    //Retiro de acentos o caracteres especiales de la cadena de texto y conversión a minúsculas
+    // La cadena de texto ingresada por el usuario es convertida a minúsculas y se le retiran los acentos o caracteres especiales 
     let entradaTexto = inputText.value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); 
 
-    // Validación de entrada únicamente para letras del alfabeto
+    // Únicamente son válidas las letras del alfabeto. 
     let regEx = /^[a-z][a-z\s]*$/;
 
     if (!entradaTexto.match(regEx)) {
         swal("Oops!", "Recuerda escribir únicamente letras del alfabeto", "error");
     }
     
-    //Encriptación de la cadena de texto
+    // Encriptación de la cadena de texto
     let textoFinal = "";
     for (let vocal of entradaTexto) {
         switch (vocal) {
@@ -48,7 +48,7 @@ encriptarBtn.addEventListener("click", function() {
 
 inputText.addEventListener("keypress", function(event) {
 
-    // Ejecución de la función cuando el usuario presione la tecla enter después de ingresar el texto
+    // Cuando el usuario presione la tecla 'enter' la función encriptar es ejecutada
     if (event.key === "Enter") {
         // Cancelación de la acción por defecto, si es necesario
         event.preventDefault();
@@ -59,7 +59,7 @@ inputText.addEventListener("keypress", function(event) {
 
 desencriptarBtn.addEventListener("click", function() {
 
-    // Creación del objeto que almacena los nuevos valores
+    // Los nuevos valores correspondientes al texto desencriptado son almacenados en un objeto
     let nuevosValores = {
         enter: "e",
         imes: "i",
@@ -83,7 +83,7 @@ copiarBtn.addEventListener("click", function() {
     inputText.select();
     inputText.setSelectionRange(0, 99999); // Para dispositivos móviles
 
-    // Selección del texto en el campo de texto
+    // Selección del valor en el campo de texto
     navigator.clipboard.writeText(inputText.value);
 
     toolTip.innerHTML = "Copiado"
