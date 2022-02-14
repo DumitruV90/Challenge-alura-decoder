@@ -9,7 +9,7 @@ const toolTip = document.getElementById("myTooltip");
 
 encriptarBtn.addEventListener("click", function() {
 
-    // La cadena de texto ingresada por el usuario es convertida a minúsculas y se le retiran los acentos o caracteres especiales 
+    // A la cadena de texto ingresada por el usuario se le retiran los acentos, y es convertida a minúsculas
     let entradaTexto = inputText.value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); 
 
     // Únicamente son válidas las letras del alfabeto. 
@@ -48,11 +48,10 @@ encriptarBtn.addEventListener("click", function() {
 
 inputText.addEventListener("keypress", function(event) {
 
-    // Cuando el usuario presione la tecla 'enter' la función encriptar es ejecutada
+    // Si el usuario presiona la tecla 'enter' la función encriptar es ejecutada
     if (event.key === "Enter") {
-        // Cancelación de la acción por defecto, si es necesario
+        // La acción por defecto es cancelada, si es necesario
         event.preventDefault();
-        // Enlace con la función asociada al botón de encriptar
         encriptarBtn.click();
     }
 });
@@ -68,7 +67,7 @@ desencriptarBtn.addEventListener("click", function() {
         ufat: "u"
     }
     
-    // Reemplazo con los nuevos valores del objeto
+    // La cadena de texto es desencriptada con los nuevos valores del objeto
     let textoNormal = inputText.value.replace(/enter|imes|ai|ober|ufat/gi, function(matched) {
         return nuevosValores[matched]
     });
