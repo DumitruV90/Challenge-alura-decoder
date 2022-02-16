@@ -1,4 +1,3 @@
-
 const inputText = document.getElementById("input-text");
 const encriptarBtn = document.getElementById("btn-encriptar");
 const desencriptarBtn = document.getElementById("btn-desencriptar");
@@ -18,7 +17,6 @@ encriptarBtn.addEventListener("click", function() {
     if (!entradaTexto.match(regEx)) {
         swal("Oops!", "Recuerda escribir únicamente letras del alfabeto", "error");
     }
-    
     // Encriptación de la cadena de texto
     let textoFinal = "";
     for (let vocal of entradaTexto) {
@@ -43,7 +41,6 @@ encriptarBtn.addEventListener("click", function() {
         }
     }
     inputText.value = textoFinal;
-    
 });
 
 inputText.addEventListener("keypress", function(event) {
@@ -66,14 +63,11 @@ desencriptarBtn.addEventListener("click", function() {
         ober: "o",
         ufat: "u"
     }
-    
     // La cadena de texto es desencriptada con los nuevos valores del objeto
     let textoNormal = inputText.value.replace(/enter|imes|ai|ober|ufat/gi, function(matched) {
         return nuevosValores[matched]
     });
-      
     inputText.value = textoNormal; 
-
 });
 
 copiarBtn.addEventListener("click", function() {
@@ -84,9 +78,7 @@ copiarBtn.addEventListener("click", function() {
 
     // Selección del valor en el campo de texto
     navigator.clipboard.writeText(inputText.value);
-
     toolTip.innerHTML = "Copiado"
-
 });
 
 copiarBtn.addEventListener("mouseout", function() {
