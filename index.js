@@ -7,7 +7,7 @@ toolTip = document.getElementById("myTooltip");
 
 
 encriptarBtn.addEventListener("click", function() {
-    // A la cadena de texto ingresada por el usuario se le retiran los acentos, y es convertida a minúsculas
+    // La cadena de texto ingresada por el usuario es normalizada o ajustada, es decir, se le retiran los acentos y es convertida a minúsculas
     let entradaTexto = inputText.value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); 
     // Únicamente son válidas las letras del alfabeto. 
     let regEx = /^[a-z][a-z\s]*$/;
@@ -80,7 +80,7 @@ copiarBtn.addEventListener("click", function() {
     inputText.setSelectionRange(0, 99999); // Para dispositivos móviles
     // Selección del valor en el campo de texto
     navigator.clipboard.writeText(inputText.value);
-    toolTip.innerHTML = "Copiado"
+    toolTip.innerHTML = "Copiado";
 });
 
 copiarBtn.addEventListener("mouseout", function() {
