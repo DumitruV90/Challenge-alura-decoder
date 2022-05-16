@@ -165,6 +165,10 @@ footer a:hover, footer a:active {background-color: inherit; color: #00628f; text
 /* Media queries */
 
 @media screen and (max-width: 600px) {
+    .title {
+        font-size: 40px;
+    }
+
     .box {
         width: 95%;
     }
@@ -180,13 +184,13 @@ footer a:hover, footer a:active {background-color: inherit; color: #00628f; text
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 360px) {
     #btn-limpiar {
         display: none;
     }
 
     footer {
-        font-size: 11px;
+        font-size: 12px;
     }
 }
 
