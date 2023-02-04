@@ -1,51 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
+    <title>Encoder</title>
+  </head>
 
-  <title>Encoder</title>
-</head>
-
-<body>
-
-  <main>
-    <section class="box">
-      <div class="title">
-        <h1>Criptex</h1>
-      </div>
-      <form action="">
-        <div class="bar">
-          <label for="input-text">Entrada de texto</label>
-          <input id="input-text" type="text" name="entrada-texto" placeholder="Escribe el mensaje que quieres encriptar"
-            autocomplete="off" autofocus>
+  <body>
+    <main>
+      <section class="box">
+        <div class="title">
+          <h1>Criptex</h1>
         </div>
-
-        <div class="input-options">
-          <input type="button" id="btn-encriptar" value="Encriptar">
-          <input type="button" id="btn-desencriptar" value="Desencriptar">
-          <div class="tooltip">
-            <input type="button" id="btn-copiar" value="Copiar"><span class="tooltiptext" id="myTooltip">Copiar texto al
-                portapapeles</span>
+        <form action="">
+          <div class="bar">
+            <label for="input-text">Entrada de texto</label>
+            <input
+              id="input-text"
+              type="search"
+              name="entrada-texto"
+              placeholder="Escribe el mensaje que quieres encriptar"
+              autocomplete="off"
+              autofocus
+            />
           </div>
-          <input type="button" id="btn-limpiar" value="Limpiar">
-        </div>
-      </form>
-    </section>
-  </main>
 
-  <footer>
-    Realizado por <a href="https://github.com/DumitruV90" target="blank">Dumitru Vasilescu Quintero</a>
-    para <a href="https://www.aluracursos.com" target="blank">Alura Latam</a>.
-  </footer>
+          <div class="input-options">
+            <input type="button" id="btn-encriptar" value="Encriptar" />
+            <input type="button" id="btn-desencriptar" value="Desencriptar" />
+            <div class="tooltip">
+              <input type="button" id="btn-copiar" value="Copiar" /><span
+                class="tooltiptext"
+                id="myTooltip"
+                >Copiar texto al portapapeles</span
+              >
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    
+    <footer>
+      Realizado por
+      <a href="https://github.com/DumitruV90" target="blank"
+        >Dumitru Vasilescu Quintero</a
+      >
+      para <a href="https://www.aluracursos.com" target="blank">Alura Latam</a>.
+    </footer>
 
-  <script src="index.js"></script>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" integrity="sha384-RIQuldGV8mnjGdob13cay/K1AJa+LR7VKHqSXrrB5DPGryn4pMUXRLh92Ev8KlGF" crossorigin="anonymous"></script>
-
-</body>
-
+    <script src="index.js"></script>
+    <script
+      src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"
+      integrity="sha384-RIQuldGV8mnjGdob13cay/K1AJa+LR7VKHqSXrrB5DPGryn4pMUXRLh92Ev8KlGF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
