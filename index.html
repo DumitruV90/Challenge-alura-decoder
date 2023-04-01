@@ -2,22 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <title>Encoder</title>
   </head>
 
   <body>
+    <div id="dark-theme">
+      <i
+        class="fa-solid fa-circle-half-stroke fa-2x"
+        onclick="switchDark()"
+      ></i>
+    </div>
     <main>
-      <section class="box">
+      <section id="box">
         <div class="title">
           <h1>Criptex</h1>
         </div>
         <form action="">
-          <div class="bar">
+          <div id="bar">
             <label for="input-text">Entrada de texto</label>
             <input
               id="input-text"
@@ -29,7 +41,7 @@
             />
           </div>
 
-          <div class="input-options">
+          <div id="input-options">
             <input type="button" id="btn-encriptar" value="Encriptar" />
             <input type="button" id="btn-desencriptar" value="Desencriptar" />
             <div class="tooltip">
@@ -43,7 +55,7 @@
         </form>
       </section>
     </main>
-    
+
     <footer>
       Realizado por
       <a href="https://github.com/DumitruV90" target="blank"

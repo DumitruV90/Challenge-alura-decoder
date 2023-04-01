@@ -1,9 +1,14 @@
-const inputText = document.getElementById("input-text"),
+const bodyRoot = document.querySelector("body"),
+  inputText = document.getElementById("input-text"),
   encriptarBtn = document.getElementById("btn-encriptar"),
   desencriptarBtn = document.getElementById("btn-desencriptar"),
   copiarBtn = document.getElementById("btn-copiar"),
   limpiarBtn = document.getElementById("btn-limpiar"),
   toolTip = document.getElementById("myTooltip");
+
+function switchDark() {
+  bodyRoot.classList.toggle("dark-mode");
+}
 
 encriptarBtn.addEventListener("click", function () {
   // La cadena de texto ingresada por el usuario es normalizada o ajustada, es decir, se le retiran los acentos y es convertida a minúsculas
@@ -90,9 +95,3 @@ copiarBtn.addEventListener("click", function () {
 copiarBtn.addEventListener("mouseout", function () {
   toolTip.innerHTML = "Copiar texto al portapapeles";
 });
-
-/*
-limpiarBtn.addEventListener("click", function () {
-  inputText.value = "";
-});
-*/
